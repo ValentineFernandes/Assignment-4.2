@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Assignment 4</title>
+  <style>
+  body {
+    font-size: 20px;
+    background-color: #bfecfc;
+  }
+    </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+$("input").focus(function(){
+  $("input#name > p#john");
+});
+$("div").focus(function(){
+  $("div.important > p#john").children();
+});
+});
+</script>
+</head>
+<body>
+<form>
+          Enter your name: <input type="text" id="name">
+          <p id="john"> Input element has direct child  p element</p>
+           </input>
+      
+       
+</form>
+ <div class="important">
+         <p id="john"> Div element has also direct child p element</p>
+         </div>   
+
+</body>
+</html>
+
+
